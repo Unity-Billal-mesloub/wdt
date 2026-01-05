@@ -265,7 +265,7 @@ bool DirectorySourceQueue::explore() {
   std::regex excludeRegex(excludePattern_);
   std::regex pruneDirRegex(pruneDirPattern_);
   std::deque<string> todoList;
-  todoList.push_back("");
+  todoList.emplace_back("");
   while (!todoList.empty()) {
     if (threadCtx_->getAbortChecker()->shouldAbort()) {
       WLOG(ERROR) << "Directory transfer thread aborted";
