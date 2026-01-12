@@ -94,7 +94,7 @@ def test(resumption):
             ).format(diff, max_allowed_diff)
         )
         exit(1)
-    print(("Test passed - Sender and Receiver" " end time diff {} ms").format(diff))
+    print(("Test passed - Sender and Receiver end time diff {} ms").format(diff))
 
 
 print("Testing without download resumption")
