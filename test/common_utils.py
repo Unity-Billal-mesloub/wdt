@@ -8,7 +8,6 @@ import shutil
 import string
 import subprocess
 import tempfile
-import time
 
 
 def get_env(name):
